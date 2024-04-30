@@ -6,6 +6,7 @@ import useDarkMode from './Hooks/useDarkMode'
 import './App.css'
 import Loader from './Components/Loader/Loader'
 import Home from './Components/Home/Home'
+import Committees from './Components/Committees/Committees'
 
 function App() {
   const navigate = useNavigate();
@@ -21,6 +22,11 @@ function App() {
               <Home />
             </>
           } />
+          <Route loader path='/committees' element={
+            <>
+              <Navbar />
+              <Committees />
+            </>} />
           <Route path='/about/smrj' element={<>About</>} />
           <Route path='*' element={<div className='h-[100vh] w-full pt-[10vh] flex justify-center items-center'>
             <Navbar />
