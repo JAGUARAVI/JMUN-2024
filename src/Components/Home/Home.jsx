@@ -44,7 +44,7 @@ function Component() {
             id: 7,
             title: 'United Nations Human Rights Council',
             subtitle: 'Subtitle 7',
-            image: 'https://jmun-23.github.io/jmun/assets/Committees%20BG/United%20Nations%20Human%20Rights%20Council.jpg'
+            image: 'https://jmun-23.github.io/zjmun/assets/Committees%20BG/United%20Nations%20Human%20Rights%20Council.jpg'
         },
         {
             id: 8,
