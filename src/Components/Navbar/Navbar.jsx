@@ -16,27 +16,27 @@ function Component() {
     const menuItems = [
         {
             name: "Home",
-            link: "/",
+            link: base,
         },
         {
             name: "About Seth M.R. Jaipuria School",
-            link: "/about/smrj",
+            link: base + "about/smrj",
         },
         {
             name: "Meet The Team",
-            link: "/about/team",
+            link: base + "about/team",
         },
         {
             name: "Committees",
-            link: "/committees",
+            link: base + "committees",
         },
         {
             name: "Partners",
-            link: "/partners",
+            link: base + "partners",
         },
         {
             name: "Resources",
-            link: "/resources",
+            link: base + "resources",
         },
     ];
 
