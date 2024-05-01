@@ -86,7 +86,7 @@ function Component() {
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent data-links='true' justify='center' className='gap-4 p-2 rounded-3xl h-12 justify-center bg-gray-300/40 dark:bg-gray-700/40 shadow-inner hidden md:flex'>
-                <NavbarItem isActive={location.pathname === '/'} onClick={() => navigate(base)}>Home</NavbarItem>
+                <NavbarItem isActive={location.pathname === base} onClick={() => navigate(base)}>Home</NavbarItem>
                 <Dropdown>
                     <NavbarItem data-links='true' isActive={location.pathname.match('\\/about')}>
                         <DropdownTrigger>
@@ -116,9 +116,9 @@ function Component() {
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
-                <NavbarItem isActive={location.pathname === '/committees'} onClick={() => navigate(base + 'committees')}>Committees</NavbarItem>
-                <NavbarItem isActive={location.pathname === '/partners'} onClick={() => navigate(base + 'partners')} className='hidden lg:flex'>Partners</NavbarItem>
-                <NavbarItem isActive={location.pathname === '/resources'} onClick={() => navigate(base + 'resources')} className='hidden lg:flex'>Resources</NavbarItem>
+                <NavbarItem isActive={location.pathname === base + 'committees'} onClick={() => navigate(base + 'committees')}>Committees</NavbarItem>
+                <NavbarItem isActive={location.pathname === base + 'partners'} onClick={() => navigate(base + 'partners')} className='hidden lg:flex'>Partners</NavbarItem>
+                <NavbarItem isActive={location.pathname === base + '/resources'} onClick={() => navigate(base + 'resources')} className='hidden lg:flex'>Resources</NavbarItem>
                 <Dropdown>
                     <NavbarItem data-links='true' isActive={location.pathname.match('\\/about')} className='hidden md:max-lg:flex'>
                         <DropdownTrigger>
