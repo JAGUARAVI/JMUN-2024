@@ -5,6 +5,7 @@ import { ChevronDown } from "../../Icons";
 import useDarkMode from '../../Hooks/useDarkMode';
 import { Sun, Moon } from '../../Icons';
 import { useLocation, useNavigate } from 'react-router-dom';
+const base = import.meta.env.BASE_URL
 
 function Component() {
     const [darkMode, setDarkMode] = useDarkMode();
@@ -41,11 +42,12 @@ function Component() {
 
     return (
         <Navbar
+            isBlurred={false}
             onMenuOpenChange={setIsMenuOpen}
             //isBlurred={false}
             //isBordered
             classNames={{
-                base: ["bg-transparent", "pt-4 pb-4", "fixed", 'h-[10vh]', 'flex', 'justify-center', 'items-center', 'w-full'],
+                base: ["bg-transparent", "pt-4 pb-4", "fixed", 'h-[10vh]', 'flex', 'justify-center', 'items-center', 'w-full', 'backdrop-blur'],
                 //wrapper: ['self-center', 'w-full xl:w-[85vw]', 'background-blur', 'backdrop-filter', 'backdrop-blur-lg', 'xl:p-10', 'xl:rounded-3xl', 'bg-white/20', 'xl:border'],
                 item: [
                     "flex",
@@ -77,26 +79,18 @@ function Component() {
                         draggable={false}
                         loading='eager'
                         alt="JMUN Logo"
-                        src="/logoWhiteTransparent.png"
+                        src={base + "logoWhiteTransparent.png"}
                         width={150}
-                        classNames={{ wrapper: 'opacity-70 hover:opacity-100 transition-all ease hover:scale-[105%] select-none hidden dark:block' }}
-                    />
-                    <Image
-                        draggable={false}
-                        loading='eager'
-                        alt="JMUN Logo"
-                        src="/logoBlackTransparent.png"
-                        width={150}
-                        classNames={{ wrapper: 'opacity-70 hover:opacity-100 transition-all ease hover:scale-[105%] select-none dark:hidden block' }}
+                        classNames={{ wrapper: 'opacity-70 hover:opacity-100 transition-all ease hover:scale-[105%] select-none invert dark:invert-0' }}
                     />
                 </NavbarBrand>
             </NavbarContent>
-            <NavbarContent data-links='true' justify='center' className='gap-4 p-2 rounded-3xl h-12 justify-center bg-gray-400/15 shadow-inner hidden md:flex'>
-                <NavbarItem isActive={location.pathname === '/'} onClick={() => navigate('/')}>Home</NavbarItem>
+            <NavbarContent data-links='true' justify='center' className='gap-4 p-2 rounded-3xl h-12 justify-center bg-gray-300/40 dark:bg-gray-700/40 shadow-inner hidden md:flex'>
+                <NavbarItem isActive={location.pathname === '/'} onClick={() => navigate(base)}>Home</NavbarItem>
                 <Dropdown>
                     <NavbarItem data-links='true' isActive={location.pathname.match('\\/about')}>
                         <DropdownTrigger>
-                            <span className='inline-flex content-center flex-wrap'>About&nbsp;&nbsp;<ChevronDown className="self-center" fill="currentColor" size={16} /></span>
+                            <span className='inline-flex content-center flex-wrap'>About{/*&nbsp;&nbsp;<ChevronDown className="self-center" fill="currentColor" size={16} />*/}</span>
                         </DropdownTrigger>
                     </NavbarItem>
                     <DropdownMenu
@@ -107,14 +101,14 @@ function Component() {
                         onAction={(key) => navigate(key)}
                     >
                         <DropdownItem
-                            key="/about/smrj"
+                            key={base + "about/smrj"}
                         /*description="ACME scales apps to meet user demand, automagically, based on load."*/
                         /*className="text-primary-600"*/
                         >
                             Seth M.R. Jaipuria School
                         </DropdownItem>
                         <DropdownItem
-                            key="/about/team"
+                            key={base + "about/team"}
                         /*description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."*/
                         /*className="text-success-600"*/
                         >
@@ -122,9 +116,9 @@ function Component() {
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
-                <NavbarItem isActive={location.pathname === '/committees'} onClick={() => navigate('/committees')}>Committees</NavbarItem>
-                <NavbarItem isActive={location.pathname === '/partners'} onClick={() => navigate('/partners')} className='hidden lg:flex'>Partners</NavbarItem>
-                <NavbarItem isActive={location.pathname === '/resources'} onClick={() => navigate('/resources')} className='hidden lg:flex'>Resources</NavbarItem>
+                <NavbarItem isActive={location.pathname === '/committees'} onClick={() => navigate(base + 'committees')}>Committees</NavbarItem>
+                <NavbarItem isActive={location.pathname === '/partners'} onClick={() => navigate(base + 'partners')} className='hidden lg:flex'>Partners</NavbarItem>
+                <NavbarItem isActive={location.pathname === '/resources'} onClick={() => navigate(base + 'resources')} className='hidden lg:flex'>Resources</NavbarItem>
                 <Dropdown>
                     <NavbarItem data-links='true' isActive={location.pathname.match('\\/about')} className='hidden md:max-lg:flex'>
                         <DropdownTrigger>
@@ -139,14 +133,14 @@ function Component() {
                         onAction={(key) => navigate(key)}
                     >
                         <DropdownItem
-                            key="/partners"
+                            key={base + "partners"}
                         /*description="ACME scales apps to meet user demand, automagically, based on load."*/
                         /*className="text-primary-600"*/
                         >
                             Partners
                         </DropdownItem>
                         <DropdownItem
-                            key="/resources"
+                            key={base + "resources"}
                         /*description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."*/
                         /*className="text-success-600"*/
                         >
@@ -164,7 +158,7 @@ function Component() {
                 >
                     {darkMode ? <Sun /> : <Moon />}
                 </Button>
-                <Button color="primary" variant="shadow" className='font-semibold text-base'>
+                <Button color="primary" variant="shadow" className='font-semibold text-base' onClick={() => navigate(base + 'register')}>
                     Register
                 </Button>
             </NavbarContent>
@@ -186,7 +180,7 @@ function Component() {
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
-        </Navbar>
+        </Navbar >
     )
 }
 

@@ -8,6 +8,7 @@ import Loader from './Components/Loader/Loader'
 import Home from './Components/Home/Home'
 import Committees from './Components/Committees/Committees'
 import Footer from './Components/Footer/Footer'
+import Register from './Components/Register/Register'
 
 function App() {
   const navigate = useNavigate();
@@ -27,14 +28,21 @@ function App() {
             <>
               <Navbar />
               <Committees />
+              <Footer />
+            </>}
+          />
+          <Route loader={<Loader />} path='/register' element={
+            <>
+              <Navbar />
+              <Register />
+              <Footer />
             </>} />
-          <Route path='/about/smrj' element={<>About</>} />
           <Route path='*' element={<div className='h-[100vh] w-full pt-[10vh] flex justify-center items-center'>
             <Navbar />
-            <div className='flex h-10 items-center space-x-4 text-2xl'>
-              <div>404</div>
+            <div className='flex h-10 items-center space-x-4 text-4xl'>
+              <div>Coming</div>
               <Divider orientation='vertical' />
-              <div>Page Not Found</div>
+              <div>Soon</div>
             </div>
           </div>} />
         </Routes>
