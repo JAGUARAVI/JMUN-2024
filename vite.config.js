@@ -5,5 +5,5 @@ import tailwindcss from 'tailwindcss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/jmun-2024/'
+  base: '/JMUN-2024/'
 })
