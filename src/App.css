@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Generica;
+    src: url('/Generica.otf');
+}
+
 html body {
     overflow-x: hidden;
 }

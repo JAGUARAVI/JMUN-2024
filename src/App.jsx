@@ -7,6 +7,7 @@ import './App.css'
 import Loader from './Components/Loader/Loader'
 import Home from './Components/Home/Home'
 import Committees from './Components/Committees/Committees'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const navigate = useNavigate();
@@ -20,8 +21,8 @@ function App() {
             <>
               <Navbar />
               <Home />
-            </>
-          } />
+              <Footer />
+            </>} />
           <Route loader path='/committees' element={
             <>
               <Navbar />

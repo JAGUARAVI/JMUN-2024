@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'generica': ['Generica', 'sans-serif'],
+    },
   },
   darkMode: "class",
   plugins: [nextui({
