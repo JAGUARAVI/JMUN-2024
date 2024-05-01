@@ -10,6 +10,8 @@ import Committees from './Components/Committees/Committees'
 import Footer from './Components/Footer/Footer'
 import Register from './Components/Register/Register'
 
+const base = import.meta.env.BASE_URL;
+
 function App() {
   const navigate = useNavigate();
   const [theme, toggleTheme] = useDarkMode()
@@ -18,20 +20,20 @@ function App() {
     <NextUIProvider navigate={navigate}>
       <main className='text-foreground bg-background'>
         <Routes>
-          <Route loader={<Loader />} path='/' element={
+          <Route loader={<Loader />} path={base + '/'} element={
             <>
               <Navbar />
               <Home />
               <Footer />
             </>} />
-          <Route loader path='/committees' element={
+          <Route loader path={base + 'committees'} element={
             <>
               <Navbar />
               <Committees />
               <Footer />
             </>}
           />
-          <Route loader={<Loader />} path='/register' element={
+          <Route loader={<Loader />} path={base + 'register'} element={
             <>
               <Navbar />
               <Register />
