@@ -3,7 +3,7 @@ import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 function Component() {
     return (
         <div className="pt-[10vh] w-full min-h-[100vh] flex justify-center">
-            <div className="w-[90vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] p-8">
+            <div className="w-[95vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] py-8">
                 <Tabs fullWidth aria-label="Options" classNames={{
                     tab: ["text-lg font-moderate"],
                 }}>
