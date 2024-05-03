@@ -63,3 +63,18 @@ export const Marker = ({ fill, size, height, width, ...props }) => {
     ><path fill="currentColor" d="M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12m0 10q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22"></path></svg>
   )
 }
+
+
+export const Close = ({ fill, size, height, width, ...props }) => {
+  return (
+    <svg
+      focusable="false"
+      height={size || height || 24}
+      role="presentation"
+      viewBox="0 0 24 24"
+      width={size || height || 24}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    ><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path></svg>
+  )
+}
