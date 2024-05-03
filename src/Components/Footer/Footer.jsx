@@ -9,8 +9,9 @@ function Component() {
             <div className='w-full flex justify-center items-center flex-col gap-8'>
                 <div className=''>
                     <h4 className='text-2xl font-semibold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text'>Conference Dates</h4>
-                    <p className='text-lg ordinal'>
-                        18th. 19th. 20th. July. 2024.
+                    <p className='text-lg'>
+                        <span className='ordinal'>
+                            18th 19th 20th</span> July 2024
                     </p>
                 </div>
                 <div className='flex flex-row gap-4'>

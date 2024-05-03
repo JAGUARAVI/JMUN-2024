@@ -91,7 +91,7 @@ function Component() {
                 }}></div>
                 <div className='w-full h-full pt-[10vh] flex justify-center items-center backdrop-grayscale flex-col gap-10'>
                     <Image draggable={false} src={base + 'logoWhiteTransparent.png'} width={450} className='invert dark:invert-0' />
-                    <h1 className="text-5xl">Deliberate <span className='text-6xl'>.</span> Defend <span className='text-6xl'>.</span> Deliver</h1>
+                    <h1 className="text-5xl">Deliberate<span className='text-6xl'>.</span> Defend<span className='text-6xl'>.</span> Deliver<span className='text-6xl'>.</span></h1>
                 </div>
             </div>
             <div className='min-h-[90vh] flex justify-center items-center flex-col text-center py-20'>
