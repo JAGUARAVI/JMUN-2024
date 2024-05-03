@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import { NextUIProvider, Divider } from "@nextui-org/react"
-import { useNavigate, Routes, Route } from 'react-router-dom'
+import { useNavigate, Routes, Route, useLocation } from 'react-router-dom'
 import useDarkMode from './Hooks/useDarkMode'
 import './App.css'
 import Loader from './Components/Loader/Loader'
@@ -14,7 +14,12 @@ const base = import.meta.env.BASE_URL;
 
 function App() {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [theme, toggleTheme] = useDarkMode()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <NextUIProvider navigate={navigate}>
