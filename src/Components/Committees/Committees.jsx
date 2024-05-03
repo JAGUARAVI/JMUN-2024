@@ -104,17 +104,15 @@ function Component() {
         {
             'id': 'uscri',
             "name": ` USCRI (United States Committee for Refugees and Immigrants)`,
-            "agenda": `Agenda -  Deliberating upon the economic discrimination against
-      women in all kinds of employment aspects with special emphasis on
-      wage inequality`,
+            "agenda": `Agenda -  Deliberating upon the need for creating a new nation to resettle the world's refugee population with special emphasis on the 2015 proposal for 'Refugee Nation'`,
 
             "desc": `When you think about home you automatically connect it with a sense of safety but have you ever thought about those who don't have any place to call their home? Who have no land and shelter on this wide earth, do you ever think about them and their fate?
 
-      As the global refugee crisis persists as one of the most pressing humanitarian challenges of our time with millions displaced from their homes due to conflict, persecution, or environmental disasters, there grows an urgent need for innovative solutions to address their plight.
-      
-      Amidst this backdrop, the proposition of creating a refugee nation emerges as a bold yet potentially transformative idea. This committee convenes with the noble agenda of exploring the feasibility, challenges, and opportunities associated with establishing a refugee nation, guided by principles of sustainability, inclusivity, and empowerment.
-      
-      From the Rohingya Crisis to the Israel Palestine War, from Ethiopian Conflict to the Sudan Crisis, this committee deals with it all and looks forward to providing the most enriching and wonderful mun-ing experience to the delegates!`,
+As the global refugee crisis persists as one of the most pressing humanitarian challenges of our time with millions displaced from their homes due to conflict, persecution, or environmental disasters, there grows an urgent need for innovative solutions to address their plight.
+
+Amidst this backdrop, the proposition of creating a refugee nation emerges as a bold yet potentially transformative idea. This committee convenes with the noble agenda of exploring the feasibility, challenges, and opportunities associated with establishing a refugee nation, guided by principles of sustainability, inclusivity, and empowerment.
+
+From the Rohingya Crisis to the Israel Palestine War, from Ethiopian Conflict to the Sudan Crisis, this committee deals with it all and looks forward to providing the most enriching and wonderful mun-ing experience to the delegates!`,
             "img": cri
         },
         {

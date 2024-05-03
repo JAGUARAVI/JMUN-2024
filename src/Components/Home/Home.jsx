@@ -72,7 +72,7 @@ function Component() {
             id: 1,
             title: 'USCRI',
             fulltitle: 'United States Committee for Refugees and Immigrants',
-            subtitle: 'Agenda - Deliberating upon the economic discrimination against women in all kinds of employment aspects with special emphasis on wage inequality',
+            subtitle: 'Agenda - Deliberating upon the need for creating a new nation to resettle the world\'s refugee population with special emphasis on the 2015 proposal for \'Refugee Nation\'',
             image: 'images/uscri.jpg',
             logo: 'logos/uscri.png',
         },
