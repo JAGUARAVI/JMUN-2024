@@ -12,51 +12,59 @@ function Component() {
         {
             id: 8,
             title: 'UNSC',
-            subtitle: 'Subtitle 8',
+            fulltitle:'United Nations Security Council',
+            subtitle: 'Agenda - Addressing the relevance and shortcomings of peacekeeping methods adopted by the council, keeping in mind the recent violation of resolutions in the Israel-Palestine conflict.',
             image: 'images/unsc.jpg'
         },
         {
             id: 2,
             title: 'GPS',
-            subtitle: 'Subtitle 2',
+            fulltitle:'Global Press Summit',
+            subtitle: 'Agenda - Role of Media in Crises with Special Emphasis on Access to Conflict Zones',
             image: 'images/gps.jpg',
             position: '71% 50%'
         },
         {
             id: 4,
             title: 'UNCTAD',
-            subtitle: 'Subtitle 4',
+            fulltitle:'United Nations Commission on Science and Technology for Development',
+            subtitle: 'Agenda - Roadmap for responsible development of AI with special reference to the global economy and developing strategies to mitigate AGI takeoff and its implications.',
             image: 'images/unctad.jpg',
         },
         {
             id: 5,
             title: 'Lok Sabha',
-            subtitle: 'Subtitle 5',
+            fulltitle:'LOK SABHA, Special Session- 1975',
+            subtitle: 'Agenda - Deliberating upon the need for proclamation of national emergency with special emphasis on measures taken by the government during this period.',
             image: 'images/ls.jpg',
             position: '15% 50%'
         },
         {
             id: 3,
             title: 'UNCSTD',
-            subtitle: 'Subtitle 3',
+            fulltitle:'United Nations Council on Trade and Development',
+            subtitle: 'Agenda - Deliberating upon the security of the trade routes with special emphasis on the impact of the global food crisis.',
             image: 'images/uncstd.jpg',
         },
         {
             id: 6,
             title: 'UNGA',
-            subtitle: 'Subtitle 6',
+            fulltitle:'United Nations General Asssembly - 2nd Committee (ECOFIN - Economic and Financial Affairs Council)',
+            subtitle: 'Agenda - Deliberating upon the increased global economic disparities in world trade and measures to promote development in the least developed countries. ',
             image: 'images/unga.jpg',
         },
         {
             id: 7,
             title: 'UNHRC',
-            subtitle: 'Subtitle 7',
+            fulltitle:'United Nations Human Rights Council',
+            subtitle: 'Agenda - Deliberating upon the need for criminal justice reforms and prison rehabilitation programmes, keeping in mind the 2030 Agenda for Sustainable Development.',
             image: 'images/unhrc.jpg',
         },
         {
             id: 1,
-            title: 'USCRI',
-            subtitle: 'Subtitle 1',
+            title: 'UNSCRI',
+            fulltitle:'United States Committee for Refugees and Immigrants',
+            subtitle: 'Agenda - Deliberating upon the economic discrimination against women in all kinds of employment aspects with special emphasis on wage inequality',
             image: 'images/uscri.jpg'
         },
     ]);
@@ -74,11 +82,11 @@ function Component() {
                 }}></div>
                 <div className='w-full h-full pt-[10vh] flex justify-center items-center backdrop-grayscale flex-col gap-10'>
                     <Image src={base + 'logoWhiteTransparent.png'} width={450} className='invert dark:invert-0' />
-                    <h1 className="text-5xl">Deliberate <span className='text-6xl'>.</span> Defend <span className='text-6xl'>.</span> Deliver</h1>
+                    <h1 className="text-5xl">Deliberate <span className='text-6xl'>.</span> Defend <span className='text-6xl'>.</span> Deliver<span className='text-6xl'>.</span></h1>
                 </div>
             </div>
             <div className='min-h-[90vh] flex justify-center items-center flex-col text-center py-20'>
-                <div className='w-full min-h-[10vh] flex justify-center items-center font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-generica bg-gradient-to-r from-neutral-400 to-stone-700 dark:from-neutral-300 dark:to-stone-500 inline-block text-transparent bg-clip-text'>
+                <div className='w-full min-h-[10vh] flex justify-center items-center font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-generica bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text'>
                     Jaipuria Model United Nations 2024
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
@@ -120,14 +128,12 @@ function Component() {
                     <Divider />
                     <CardBody>
                         <p className=' w-full flex text-sm md:text-lg lg:text-xl p-8'>Greetings!<br /><br />
-                            It is with boundless enthusiasm and fervent spirit that we invite you to the eleventh edition of Jaipuria Model United Nations to be held from 27th to 29th July, 2023. We guarantee that at this edition of JMUN you will witness the best of both enthrallment and intellect. JMUN comes off as more than a mere hich leaves an conference. lt is rather a festival,an emotion which leaves a nonpareil mark on our psyches.
-                            <br /><br />
-                            We summon you to unveil the vibrant tapestry of global issues with international diplomacy as we present to you eight intellectually stimulating committees ranging from an environmental G20 to the much anticipated Lok Sabha. The Global Press Summit, one of its kind, will continue with its eleven year old legacy, to the finest mark Thus, we seek and strive to make you leave this edition of the conference with memories which you shall forever cherish. We invite you to seize the extraordinary opportunity to ignite change and amplify your impact.
-                            <br /><br />
-                            JMUN, ever since its inception in 2013, has continued to remain unsurpassed in brilliance and unparalleled in magnificence. We solicit your presence on the three days of the conference which is not merely an event but an odyssey of growth, empowerment, resilience and self discovery. You have a monumental opportunity to be the catalyst of transformation, shaping policies and initiatives that pave the path of a just,equitable and sustainable future. As we prepare to walk on the footsteps of our seniors and endeavour to leave no stone unturned to provide an unmatchable experience at the three day conference, we welcome you to Deliberate Defend and Deliver!
-                            <br /><br />
-                            Regards,<br />
-                            Secretary General<br /></p>
+                        With great excitement and a passionate heart, we extend our warm invitation to the twelfth chapter of the Jaipuria Model United Nations, scheduled for the 18th to the 20th of July, 2024. In this edition of JMUN we promise you a fusion of exhilaration and scholarly debate that transcends the conventional conference framework. It’s a celebration, a cherished sentiment that imprints itself indelibly upon our minds.<br/><br/>
+                        We beckon you to explore the rich mosaic of worldwide concerns through the lens of international diplomacy, showcasing eight thought-provoking committees, from discussions on creating a special refugee state to the quite literal 'historic' Lok Sabha we have it all. Our goal is to create an unforgettable experience, leaving you with lasting memories. Embrace this unique chance to spark transformation and magnify your impact.<br/><br/>
+                        In the spirit of JMUN’s legacy since 2013, which has consistently shone with unmatched splendor, we invite you to join us for a three-day journey of personal and collective evolution, fortitude, and introspection. Seize this pivotal moment to become an agent of change, sculpting policies and actions that forge a fair, just, and sustainable tomorrow. Following in the footsteps of our predecessors, we are committed to delivering an unparalleled experience over these three days.<br/><br/> We invite you to Deliberate, Defend, Deliver. 
+                        <br/><br/>
+                        Regards,<br/> The Secretary-General                  
+                            </p>
                     </CardBody>
                 </Card>
             </div>
@@ -159,13 +165,13 @@ function Component() {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.1 }}
                                 exit={{ opacity: 0 }}
-                            >
-
-                                <motion.h2>{selected.title}</motion.h2>
-                                <motion.h5>{selected.subtitle}</motion.h5>
+                            ><div className='flex justify-center items-center flex-col bg-black bg-opacity-70 rounded-2xl p-3 m-7'>
+                                <motion.h2><div className='title-font sm:text-4xl text-3xl mb-4 font-medium font-generica font-extrabold '><p className='p-3 text-center'>{selected.fulltitle}</p></div></motion.h2>
+                                <motion.h5><div className='title-font sm:text-2xl text-3xl mb-4 font-small '><p className='p-3 text-center'>{selected.subtitle}</p></div></motion.h5>
                                 <motion.button onClick={() => setSelected(null)}>
-                                    Close
+                                    <div className='border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline'>Close</div>
                                 </motion.button>
+                                </div>
                             </motion.div>
                         )}
                     </AnimatePresence>
