@@ -10,7 +10,9 @@ import Committees from './Components/Committees/Committees'
 import Footer from './Components/Footer/Footer'
 import Register from './Components/Register/Register'
 import Partners from './Components/Partners/Partners'
-import Team from './Components/meettheteam/MeetTheTeam'
+import Team from './Components/About/Team'
+import School from './Components/About/School'
+
 
 const base = import.meta.env.BASE_URL;
 
@@ -46,18 +48,27 @@ function App() {
               <Register />
               <Footer />
             </>} />
+
             <Route loader={<Loader />} path={base + 'partners'} element={
             <>
               <Navbar />
               <Partners />
               <Footer />
             </>} />
-            {/* <Route loader={<Loader />} path={base + 'meettheteam'} element={
+          <Route loader={<Loader />} path={base + 'about/team'} element={
             <>
               <Navbar />
-              <MeetTheTeam />
+              <Team />
               <Footer />
-            </>} /> */}
+            </>
+          } />
+          <Route loader={<Loader />} path={base + 'about/smrj'} element={
+            <>
+              <Navbar />
+              <School />
+              <Footer />
+            </>
+          } />
           <Route path='*' element={<div className='h-[100vh] w-full pt-[10vh] flex justify-center items-center'>
             <Navbar />
             <div className='flex h-10 items-center space-x-4 text-4xl'>
