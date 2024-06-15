@@ -9,8 +9,10 @@ import Home from './Components/Home/Home'
 import Committees from './Components/Committees/Committees'
 import Footer from './Components/Footer/Footer'
 import Register from './Components/Register/Register'
+import Partners from './Components/Partners/Partners'
 import Team from './Components/About/Team'
 import School from './Components/About/School'
+
 
 const base = import.meta.env.BASE_URL;
 
@@ -44,6 +46,13 @@ function App() {
             <>
               <Navbar />
               <Register />
+              <Footer />
+            </>} />
+
+            <Route loader={<Loader />} path={base + 'partners'} element={
+            <>
+              <Navbar />
+              <Partners />
               <Footer />
             </>} />
           <Route loader={<Loader />} path={base + 'about/team'} element={
