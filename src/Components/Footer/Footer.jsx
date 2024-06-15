@@ -36,10 +36,11 @@ function Component() {
             </div>
             <div className='w-full flex justify-center items-center'>
                 <div className='justify-center items-center'>
-                    <p className=' text-center text-2xl font-semibold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text '>Our Partners</p>
-                    <div className="grid grid-cols-2">
-                        <Image src={base + 'images/partner1.png'} width={150} className='invert' />
+                    <p className=' text-center text-2xl font-semibold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text ml-10'>Our Partners</p>
+                    <div className="grid grid-cols-3">
+                        <Image src={base + 'images/partner1.png'} width={100} className='invert' />
                         <Image src={base + 'images/partner2.png'} width={100} className='invert' />
+                        <Image src={base + 'images/partner3.png'} width={100} className='pt-2 ml-3'/>
                     </div>
                 </div>
             </div>
