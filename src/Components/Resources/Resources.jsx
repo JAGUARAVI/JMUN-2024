@@ -69,8 +69,9 @@ function Component() {
         <>
             <div className="pt-[10vh] w-full min-h-[100vh]">
                 <div className="w-full flex  items-center flex-col">
-                    <div className="py-[10vh]">
-                        <h1 className="text-5xl lg:text-6xl py-6xl mb-2xl font-generica font-bold">Resources</h1>
+                    <div className="py-[5vh] text-center">
+                        <p className="text-5xl lg:text-6xl py-6xl mb-2xl font-generica font-bold">Resources</p>
+                        <p className="pt-[5vh]">Click on your respective committee to download its background guide.</p>
                     </div>
                     <div className="min-h-[80vh] w-full flex items-center flex-col">
                         <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 xl:grid-cols-8 xl:grid-rows-1 w-full">

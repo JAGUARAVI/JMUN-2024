@@ -159,7 +159,7 @@ function Component() {
                         <p>This conference has been home to never—seen—before committees
                             passed down as legacy since its inception.</p>
 
-                        <p>The goal this year, for its eleventh edition, is to make it bigger and
+                        <p>The goal this year, for its twelfth edition, is to make it bigger and
                             better than it has ever been.</p>
                     </CardBody>
                 </Card>
