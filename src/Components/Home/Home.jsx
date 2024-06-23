@@ -103,18 +103,24 @@ function Component() {
                         date={new Date('2024-07-18T10:00:00')}
                         intervalDelay={1000}
                         precision={0}
-                        renderer={props => <div className="h-full w-full col-span-3 flex justify-center items-center font-reguilar text-2xl md:text-3xl lg:text-4xl gap-16 ml-4 mr-4">
-                            <div>
-                                <div>{props.days} Days</div>
-                                <Spacer y={10} />
-                                <div>{props.minutes < 10 ? '0' + props.minutes : props.minutes} Minutes</div>
-                            </div>
-                            <div>
+                        renderer={(props) => <div className="h-full w-full col-span-3 flex justify-center items-center font-reguilar text-2xl md:text-3xl lg:text-4xl gap-16 ml-4 mr-4">
+                            {
+                                props.completed ? <div className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#FBDA61] to-[#FF5ACD] text-transparent bg-clip-text'>JMUN'24 is Live!</div> :
 
-                                <div>{props.hours} Hours</div>
-                                <Spacer y={10} />
-                                <div>{props.seconds < 10 ? '0' + props.seconds : props.seconds} Seconds</div>
-                            </div>
+                                    <>
+                                        <div>
+                                            <div>{props.days} Days</div>
+                                            <Spacer y={10} />
+                                            <div>{props.minutes < 10 ? '0' + props.minutes : props.minutes} Minutes</div>
+                                        </div>
+                                        <div>
+
+                                            <div>{props.hours} Hours</div>
+                                            <Spacer y={10} />
+                                            <div>{props.seconds < 10 ? '0' + props.seconds : props.seconds} Seconds</div>
+                                        </div>
+                                    </>
+                            }
                         </div>
                         }
                     />
