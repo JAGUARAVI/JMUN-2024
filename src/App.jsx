@@ -12,6 +12,7 @@ import Register from './Components/Register/Register'
 import Partners from './Components/Partners/Partners'
 import Team from './Components/About/Team'
 import School from './Components/About/School'
+import Resources from './Components/Resources/Resources'
 
 
 const base = import.meta.env.BASE_URL;
@@ -49,10 +50,16 @@ function App() {
               <Footer />
             </>} />
 
-            <Route loader={<Loader />} path={base + 'partners'} element={
+          <Route loader={<Loader />} path={base + 'partners'} element={
             <>
               <Navbar />
               <Partners />
+              <Footer />
+            </>} />
+          <Route loader={<Loader />} path={base + 'resources'} element={
+            <>
+              <Navbar />
+              <Resources />
               <Footer />
             </>} />
           <Route loader={<Loader />} path={base + 'about/team'} element={

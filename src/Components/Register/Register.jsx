@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Tabs, Tab, Card, Skeleton } from "@nextui-org/react";
 
 function Component() {
     const [loading1, setLoading1] = useState(true);
     const [loading2, setLoading2] = useState(true);
+
+    useEffect(() => {
+        document.title = 'Register | JMUN 2024'
+    }, [])
+
 
     return (
         <div className="pt-[10vh] w-full min-h-[100vh] flex justify-center">
