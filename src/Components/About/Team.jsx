@@ -29,7 +29,7 @@ const extended = [
     { src: base + "images/secretariat/Samriddhi.jpg", alt: "Image 11", name: "Samriddhi Yadav", post: "Under-Secretary General for Logistics and Hospitality" },
     { src: base + "images/secretariat/Dhwaj.jpg", alt: "Image 12", name: "Dhwaj Sinha", post: "Under-Secretary General for Administration" },
     { src: base + "images/secretariat/Tanishka.jpg", alt: "Image 13", name: "Tanishka Singh", post: "Head of International Press" },
-    { src: base + "images/secretariat/Tanishka.jpg", alt: "Image 13", name: "Ananya Singhal", post: "Creative Co-Head" },
+    { src: base + "images/secretariat/Ananya.jpg", alt: "Image 13", name: "Ananya Singhal", post: "Creative Co-Head" },
 ];
 
 const item = {

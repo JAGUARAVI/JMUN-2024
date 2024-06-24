@@ -76,7 +76,7 @@ function Component() {
                     <div className="min-h-[80vh] w-full flex items-center flex-col">
                         <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 xl:grid-cols-8 xl:grid-rows-1 w-full">
                             {items.map((item) => (
-                                <div className='w-full h-[30vh] hover:z-10 md:h-[40vh] xl:h-[80vh] bg-primary-100 brightness-75 transition-all hover:brightness-100 hover:scale-[105%] flex justify-end items-center flex-col bg-cover bg-center data-[low=true]:hidden data-[low=true]:md:flex' key={item.id} layoutId={item.id} onClick={() => window.open(base + 'resources/' + item.id + '.pdf', '_blank').focus()}
+                                <div className='w-full h-[30vh] hover:z-10 md:h-[40vh] xl:h-[80vh] bg-primary-100 brightness-75 transition-all hover:brightness-100 hover:scale-[105%] flex justify-end items-center flex-col bg-cover bg-center data-[low=true]:hidden data-[low=true]:md:flex' key={item.id} onClick={() => window.open(base + 'resources/' + item.id + '.pdf', '_blank').focus()}
                                     style={{
                                         backgroundImage: `url(${base + item.image})`,
                                         backgroundPosition: item.position || 'center',

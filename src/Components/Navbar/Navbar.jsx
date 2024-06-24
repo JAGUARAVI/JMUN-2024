@@ -118,9 +118,9 @@ function Component() {
                 </Dropdown>
                 <NavbarItem isActive={location.pathname === base + 'committees'} onClick={() => navigate(base + 'committees')}>Committees</NavbarItem>
                 <NavbarItem isActive={location.pathname === base + 'partners'} onClick={() => navigate(base + 'partners')} className='hidden lg:flex'>Partners</NavbarItem>
-                <NavbarItem isActive={location.pathname === base + '/resources'} onClick={() => navigate(base + 'resources')} className='hidden lg:flex'>Resources</NavbarItem>
+                <NavbarItem isActive={location.pathname === base + 'resources'} onClick={() => navigate(base + 'resources')} className='hidden lg:flex'>Resources</NavbarItem>
                 <Dropdown>
-                    <NavbarItem data-links='true' isActive={location.pathname.match('\\/about')} className='hidden md:max-lg:flex'>
+                    <NavbarItem data-links='true' isActive={location.pathname === base + 'resources' || location.pathname === base + 'partners'} className='hidden md:max-lg:flex'>
                         <DropdownTrigger>
                             <span className='inline-flex content-center flex-wrap'>More&nbsp;&nbsp;<ChevronDown className="self-center" fill="currentColor" size={16} /></span>
                         </DropdownTrigger>

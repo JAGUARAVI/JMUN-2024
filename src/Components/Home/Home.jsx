@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL
 
 function Component() {
     const [selected, setSelected] = useState(null)
-    const [items, setItems] = useState([
+    const items = [
         {
             id: 8,
             title: 'UNSC',
@@ -76,14 +76,14 @@ function Component() {
             image: 'images/uscri.jpg',
             logo: 'logos/uscri.png',
         },
-    ]);
+    ];
 
     useEffect(() => {
         document.title = 'Home | JMUN\'24'
     }, [])
 
     return (
-        <div className="w-full min-h-[100vh]">
+        <div className="w-full min-h-[100vh] flex flex-col items-center">
             <div className="w-full h-[100vh] font-generica font-semibold text-center" >
                 <div className='w-full h-full absolute  bg-cover bg-fixed opacity-[0.4]' style={{
                     backgroundImage: `url(${base + 'images/bg.jpg'})`,
@@ -106,7 +106,6 @@ function Component() {
                         renderer={(props) => <div className="h-full w-full col-span-3 flex justify-center items-center font-reguilar text-2xl md:text-3xl lg:text-4xl gap-16 ml-4 mr-4">
                             {
                                 props.completed ? <div className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#FBDA61] to-[#FF5ACD] text-transparent bg-clip-text'>JMUN'24 is Live!</div> :
-
                                     <>
                                         <div>
                                             <div>{props.days} Days</div>
@@ -135,15 +134,15 @@ function Component() {
                         /></div>
                 </div>
             </div>
-            <div className="min-h-[80vh] w-full flex items-center flex-col p-7 mb-7 mt-[10vh] mb-[10vh]">
+            <div className="min-h-[70vh] w-full lg:max-w-[75vw] xl:max-w-[65vw] flex items-center flex-col p-7 mb-7 mt-[10vh] mb-[10vh]">
                 <Card isBlurred className="max-w-[90vw] md:max-w-[80vw] xl:max-w-[75vw]">
                     <CardHeader className="flex items-center">
                         <p className='pl-4 text-center w-full h-[10vh] flex justify-center items-center font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-generica bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text'>Letter from the Secretary General</p>
                     </CardHeader>
                     <Divider />
                     <CardBody>
-                        <p className=' w-full flex text-sm md:text-lg lg:text-xl p-8'>Greetings!<br /><br />
-                            With great excitement and a passionate heart, we extend our warm invitation to the twelfth chapter of the Jaipuria Model United Nations, scheduled for the 18th to the 20th of July, 2024. In this edition of JMUN we promise you a fusion of exhilaration and scholarly debate that transcends the conventional conference framework. It’s a celebration, a cherished sentiment that imprints itself indelibly upon our minds.<br /><br />
+                        <p className=' w-full flex text-sm md:text-lg lg:text-xl p-8 text-justify'>Greetings!<br /><br />
+                            With great excitement and a passionate heart, we extend our warm invitation to the twelfth chapter of the Jaipuria Model United Nations, scheduled for the 18th to the 20th of July, 2024. In this edition of JMUN we promise you a fusion of exhilaration and scholarly debate that transcends the conventional conference framework. It's a celebration, a cherished sentiment that imprints itself indelibly upon our minds.<br /><br />
                             We beckon you to explore the rich mosaic of worldwide concerns through the lens of international diplomacy, showcasing eight thought-provoking committees, from discussions on creating a special refugee state to the quite literal 'historic' Lok Sabha we have it all. Our goal is to create an unforgettable experience, leaving you with lasting memories. Embrace this unique chance to spark transformation and magnify your impact.<br /><br />
                             In the spirit of JMUN's legacy since 2013, which has consistently shone with unmatched splendor, we invite you to join us for a three-day journey of personal and collective evolution, fortitude, and introspection. Seize this pivotal moment to become an agent of change, sculpting policies and actions that forge a fair, just, and sustainable tomorrow. Following in the footsteps of our predecessors, we are committed to delivering an unparalleled experience over these three days.<br /><br /> We invite you to Deliberate, Defend, Deliver.
                             <br /><br />
