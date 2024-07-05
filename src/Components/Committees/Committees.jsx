@@ -33,6 +33,7 @@ function Component() {
         equitable AI progress while managing AGI risks. Join us in shaping a
         future where AI empowers all while upholding human dignity..`,
             "img": uncstd,
+            "filename": 'uncstd.pdf'
         },
         {
             'id': 'unhrc',
@@ -49,7 +50,8 @@ function Component() {
         Are we content to stand idly by as countless souls languish behind bars, their humanity stripped away by the cold, unyielding hand of oppression?
         
         Or will we dare to challenge the status quo, to confront the darkness that lurks within our midst, striving for a world where every individual is afforded the opportunity for redemption?`,
-            "img": hrc
+            "img": hrc,
+            "filename": 'unhrc.pdf'
         },
         {
             'id': 'unga',
@@ -64,7 +66,8 @@ function Component() {
       
       Guided by the UN's Sustainable Development Goals (SDGs), we'll forge a path towards a more inclusive future.  Craft innovative solutions like establishing fair trade practices, spearheading investment initiatives in LDC infrastructure and education, and advocating for debt relief.`,
 
-            "img": ga
+            "img": ga,
+            "filename": 'unga.pdf'
 
         },
         {
@@ -73,7 +76,8 @@ function Component() {
             "agenda": " Deliberating upon the security of the trade routes with special emphasis on the impact of the global food crisis",
             "desc": `The enduring issue of the global food crisis, deeply entrenched within geopolitics, has long been a subject of discourse. Its primary root cause lies in the insecurity plaguing global trade routes, which serve as critical conduits of international commerce. These routes represent pivotal junctures in the tapestry of world trade, the obstruction or illicit seizure of which could precipitate profound economic, political, and social ramifications.
       It is with this pressing concern in mind that our committee, the United Nations Conference for Trade and Development (UNCTAD), endeavors to shed light on this matter during the 12th edition of the Jaipuria Model United Nations in 2024. Within our deliberations, diverse perspectives will converge to explore avenues for resolving this crisis and devising legislative frameworks aimed at safeguarding against its recurrence on the global stage`,
-            "img": ctad
+            "img": ctad,
+            "filename": 'unctad.pdf'
         },
         {
             'id': 'ls',
@@ -88,7 +92,8 @@ function Component() {
       
       The committee brings all the leaders, elected as well as non elected, inside the ‘temple of democracy’ to discuss the so-called slander on it.`,
 
-            "img": ls
+            "img": ls,
+            "filename": 'ls.pdf'
         },
 
         {
@@ -99,7 +104,8 @@ function Component() {
       Conflict Zones`,
             "desc": `A committee unique to JMUN, the Global Press Summit is the perfect amalgamation of reporting and debate. Involving reporters, photographers and caricaturists, this committee deliberates upon issues concerning the media.
       The agenda, formed keeping in mind the current world scenario, aims at discussing both the perspectives reporting agencies over the defining role they play in crisis zones. As the fourth pillar of democracy, the media has a responsibility that it must realize in the midst of the chaos that surrounds the earth. The addition of the real world issues shall make this committee an unforgettable experience.`,
-            "img": gps
+            "img": gps,
+            "filename": 'gps.zip'
         },
         {
             'id': 'uscri',
@@ -113,7 +119,8 @@ As the global refugee crisis persists as one of the most pressing humanitarian c
 Amidst this backdrop, the proposition of creating a refugee nation emerges as a bold yet potentially transformative idea. This committee convenes with the noble agenda of exploring the feasibility, challenges, and opportunities associated with establishing a refugee nation, guided by principles of sustainability, inclusivity, and empowerment.
 
 From the Rohingya Crisis to the Israel Palestine War, from Ethiopian Conflict to the Sudan Crisis, this committee deals with it all and looks forward to providing the most enriching and wonderful mun-ing experience to the delegates!`,
-            "img": cri
+            "img": cri,
+            "filename": 'uscri.pdf'
         },
         {
             'id': 'unsc',
@@ -130,8 +137,8 @@ From the Rohingya Crisis to the Israel Palestine War, from Ethiopian Conflict to
       The UNSC committee simulation is an ideal platform for delegates who are passionate about international relations, global security, and the role of the United Nations in maintaining a peaceful world.
       
       This committee promises to be a challenging and rewarding experience, fostering critical thinking, diplomatic negotiation, and the development of effective solutions to real-world problems.`,
-            "img": sc
-
+            "img": sc,
+            "filename": 'unsc.pdf'
         }
     ]
 
@@ -241,7 +248,7 @@ From the Rohingya Crisis to the Israel Palestine War, from Ethiopian Conflict to
                                                 {committee.desc}
                                             </p>
                                             <div className="flex justify-center">
-                                                <Button color="primary" size="lg" onPress={() => window.open(base + 'resources/' + committee.id + '.pdf', '_blank').focus()}>
+                                                <Button color="primary" size="lg" onPress={() => window.open(base + 'resources/' + committee.filename, '_blank').focus()}>
                                                     Background Guide
                                                 </Button>
                                             </div>

@@ -11,51 +11,59 @@ function Component() {
             id: 'unsc',
             title: 'UNSC',
             subtitle: 'Subtitle 8',
-            image: 'images/unsc.jpg'
+            image: 'images/unsc.jpg',
+            filename: 'unsc.pdf'
         },
         {
             id: 'gps',
             title: 'GPS',
             subtitle: 'Subtitle 2',
             image: 'images/gps.jpg',
-            position: '71% 50%'
+            position: '71% 50%',
+            filename: 'gps.zip'
         },
         {
             id: 'unctad',
             title: 'UNCTAD',
             subtitle: 'Subtitle 4',
             image: 'images/unctad.jpg',
+            filename: 'unctad.pdf'
         },
         {
             id: 'ls',
             title: 'Lok Sabha',
             subtitle: 'Subtitle 5',
             image: 'images/ls.jpg',
-            position: '15% 50%'
+            position: '15% 50%',
+            filename: 'ls.pdf'
         },
         {
             id: 'uncstd',
             title: 'UNCSTD',
             subtitle: 'Subtitle 3',
             image: 'images/uncstd.jpg',
+            filename: 'uncstd.pdf'
         },
         {
             id: 'unga',
             title: 'UNGA',
             subtitle: 'Subtitle 6',
             image: 'images/unga.jpg',
+            filename: 'unga.pdf'
         },
         {
             id: 'unhrc',
             title: 'UNHRC',
             subtitle: 'Subtitle 7',
             image: 'images/unhrc.jpg',
+            filename: 'unhrc.pdf'
         },
         {
             id: 'uscri',
             title: 'USCRI',
             subtitle: 'Subtitle 1',
-            image: 'images/uscri.jpg'
+            image: 'images/uscri.jpg',
+            filename: 'uscri.pdf'
         },
     ];
 
@@ -76,7 +84,7 @@ function Component() {
                     <div className="min-h-[80vh] w-full flex items-center flex-col">
                         <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 xl:grid-cols-8 xl:grid-rows-1 w-full">
                             {items.map((item) => (
-                                <div className='w-full h-[30vh] hover:z-10 md:h-[40vh] xl:h-[80vh] bg-primary-100 brightness-75 transition-all hover:brightness-100 hover:scale-[105%] flex justify-end items-center flex-col bg-cover bg-center data-[low=true]:hidden data-[low=true]:md:flex' key={item.id} onClick={() => window.open(base + 'resources/' + item.id + '.pdf', '_blank').focus()}
+                                <div className='w-full h-[30vh] hover:z-10 md:h-[40vh] xl:h-[80vh] bg-primary-100 brightness-75 transition-all hover:brightness-100 hover:scale-[105%] flex justify-end items-center flex-col bg-cover bg-center data-[low=true]:hidden data-[low=true]:md:flex' key={item.id} onClick={() => window.open(base + 'resources/' + item.filename, '_blank').focus()}
                                     style={{
                                         backgroundImage: `url(${base + item.image})`,
                                         backgroundPosition: item.position || 'center',
