@@ -79,9 +79,9 @@ function App() {
           <Route path='*' element={<div className='h-[100vh] w-full pt-[10vh] flex justify-center items-center'>
             <Navbar />
             <div className='flex h-10 items-center space-x-4 text-4xl'>
-              <div>Coming</div>
+              <div>404</div>
               <Divider orientation='vertical' />
-              <div>Soon</div>
+              <div>Page Not Found</div>
             </div>
           </div>} />
         </Routes>

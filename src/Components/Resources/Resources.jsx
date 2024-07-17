@@ -78,8 +78,12 @@ function Component() {
             <div className="pt-[10vh] w-full min-h-[100vh]">
                 <div className="w-full flex  items-center flex-col">
                     <div className="py-[5vh] text-center">
-                        <p className="text-5xl lg:text-6xl py-6xl mb-2xl font-generica font-bold">Resources</p>
-                        <p className="pt-[5vh]">Click on your respective committee to download its background guide.</p>
+                        <p className="text-5xl lg:text-6xl py-6xl mb-2xl font-generica font-bold pb-[2.5vh]">Resources</p>
+                        <div>
+                            <Button onClick={() => window.open(base + 'resources/schedule.pdf', '_blank').focus()} radius="md" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg font-semibold mr-[2vw]" color="secondary" variant="shadow">Schedule</Button>
+                            <Button onClick={() => window.open(base + 'resources/rules_of_procedure.pdf', '_blank').focus()} radius="md" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg font-semibold" color="secondary" variant="shadow">Rules of Procedure</Button>
+                        </div>
+                        <p className="pt-[2.5vh]">Click on your respective committee to download its background guide.</p>
                     </div>
                     <div className="min-h-[80vh] w-full flex items-center flex-col">
                         <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 xl:grid-cols-8 xl:grid-rows-1 w-full">
